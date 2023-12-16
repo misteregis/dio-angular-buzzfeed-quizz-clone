@@ -26,9 +26,9 @@ export class QuizzComponent implements OnInit {
 
   ngOnInit(): void {
     if (quizz_questions) {
-      const length = quizz_questions.length;
+      const quizzLength = quizz_questions.length;
 
-      this.quizz = quizz_questions[this.generateRandomNumber(length)];
+      this.quizz = quizz_questions[this.generateRandomNumber(quizzLength)];
       this.finished = false;
       this.title = this.quizz.title;
 
@@ -59,16 +59,12 @@ export class QuizzComponent implements OnInit {
     }
   }
 
-  async checkResult(anwsers: string[]) {
-    const result = anwsers.reduce((previous, current, i, arr) => {
-      if (
-        arr.filter((item) => item === previous).length >
-        arr.filter((item) => item === current).length
-      ) {
-        return previous;
-      } else {
-        return current;
-      }
+  async checkResult(answers: string[]) {
+    const result = answers.reduce((previous, current) => {
+      const previousCount = answers.filter((item) => item === previous).length;
+      const currentCount = answers.filter((item) => item === current).length;
+
+      return previousCount > currentCount ? previous : current;
     });
 
     return result;
