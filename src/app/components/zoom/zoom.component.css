@@ -1,0 +1,63 @@
+.zoom__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 10px;
+  width: 80%;
+  gap: 10px;
+}
+
+.zoom__container > span {
+  cursor: pointer;
+  -webkit-transition: background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    color 0.15s ease-in-out;
+}
+
+.zoom__percentage {
+  width: 33px;
+  text-align: center;
+}
+
+.zoom__plus,
+.zoom__minus {
+  width: 18px;
+  height: 18px;
+  border-color: white;
+  background-color: transparent;
+}
+
+.zoom__plus.disabled,
+.zoom__minus.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.zoom__plus:hover,
+.zoom__minus:hover {
+  border-color: #f8f9fa;
+  background-color: #f8f9fa;
+}
+
+.zoom__plus::after,
+.zoom__plus::before,
+.zoom__minus::before {
+  background-color: white;
+}
+
+.zoom__plus:hover::after,
+.zoom__plus:hover::before,
+.zoom__minus:hover::before {
+  background-color: #333;
+}

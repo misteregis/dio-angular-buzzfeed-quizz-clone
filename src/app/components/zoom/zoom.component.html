@@ -1,0 +1,15 @@
+<div class="zoom__container">
+  <span
+    [ngClass]="{ disabled: percentage === min }"
+    class="zoom__minus minus-sign"
+    title="Diminuir zoom"
+    (click)="zoomOut()"
+  ></span>
+  <small class="zoom__percentage">{{ percentageText }}</small>
+  <span
+    [ngClass]="{ disabled: percentage === max }"
+    class="zoom__plus plus-sign"
+    title="Aumentar zoom"
+    (click)="zoomIn()"
+  ></span>
+</div>
