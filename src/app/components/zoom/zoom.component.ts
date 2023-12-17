@@ -1,9 +1,9 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit, Renderer2, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-zoom',
   templateUrl: './zoom.component.html',
-  styleUrls: ['./zoom.component.css'],
+  styleUrls: ['./zoom.component.css', './zoom.responsive.component.css'],
 })
 export class ZoomComponent implements OnInit {
   percentageText!: string;
@@ -50,6 +50,27 @@ export class ZoomComponent implements OnInit {
     if (fontSize > this.min) {
       this.fontSize -= this.step;
       this.setFontSize();
+    }
+  }
+
+  reset(): void {
+    this.fontSize = this._fontSize;
+    this.setFontSize();
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  handleKeyDown(event: KeyboardEvent): void {
+    const keyActions: Record<string, () => void> = {
+      '+': () => this.zoomIn(),
+      '-': () => this.zoomOut(),
+      '0': () => this.reset(),
+    };
+
+    const action = keyActions[event.key];
+
+    if (event.ctrlKey && action) {
+      event.preventDefault();
+      action();
     }
   }
 }

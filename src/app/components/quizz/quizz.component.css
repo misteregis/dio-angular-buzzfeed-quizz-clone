@@ -2,6 +2,7 @@
   width: 80%;
   margin: auto;
   padding: 20px;
+  transition: width 0.15s ease-in-out;
 }
 
 .quizz_logo {

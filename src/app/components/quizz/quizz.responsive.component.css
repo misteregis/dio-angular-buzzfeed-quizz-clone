@@ -1,0 +1,25 @@
+@media screen and (max-width: 880px) {
+  .quizz__container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .quizz_logo > h3,
+  .quizz_questions > h3 {
+    font-size: 2.7vw;
+  }
+}
+
+@media screen and (max-width: 556px) {
+  .btn-option {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .quizz_logo > h3,
+  .quizz_questions > h3 {
+    font-size: 0.8rem;
+  }
+}
