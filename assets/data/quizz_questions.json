@@ -1,0 +1,133 @@
+[
+  {
+    "title": "Você seria um herói ou vilão?",
+    "questions": [
+      {
+        "question": "Qual super poder você escolheria?",
+        "options": [
+          { "name": "Raios-Lasers", "alias": "A" },
+          { "name": "Voar", "alias": "B" },
+          { "name": "Explodir coisas", "alias": "A" },
+          { "name": "Curar feridas", "alias": "B" },
+          { "name": "Soltar fogo pelas mãos", "alias": "A" }
+        ]
+      },
+      {
+        "question": "Quem você salvaria primeiro?",
+        "options": [
+          { "name": "Crianças", "alias": "A" },
+          { "name": "Idosos", "alias": "A" },
+          { "name": "Não saberia escolher", "alias": "B" }
+        ]
+      },
+      {
+        "question": "Qual a sua maior preocupação ao enfrentar outro super ser?",
+        "options": [
+          { "name": "Não destruir prédios", "alias": "B" },
+          { "name": "Socar a cara do inimigo", "alias": "A" },
+          { "name": "Não sujar meu traje", "alias": "A" },
+          { "name": "Não deixar ninguém se ferir", "alias": "B" }
+        ]
+      },
+      {
+        "question": "Qual o seu maior foco?",
+        "options": [
+          { "name": "Ficar rico com poderes", "alias": "A" },
+          { "name": "Salvar a cidade", "alias": "B" }
+        ]
+      },
+      {
+        "question": "Qual o seu apelido de super ser?",
+        "options": [
+          { "name": "O Terrível", "alias": "A" },
+          { "name": "Amigo da vizinhança", "alias": "B" }
+        ]
+      }
+    ],
+    "results": {
+      "A": "Você muito provavelmente seria um super Vilão!",
+      "B": "Você muito provavelmente seria um super Herói!"
+    }
+  },
+  {
+    "title": "Como você escolheria seu esconderijo secreto?",
+    "questions": [
+      {
+        "question": "Qual seria a localização ideal?",
+        "options": [
+          { "name": "Ilha deserta", "alias": "A" },
+          { "name": "Base subaquática", "alias": "B" },
+          { "name": "Cidade abandonada", "alias": "A" },
+          { "name": "Montanhas isoladas", "alias": "B" }
+        ]
+      },
+      {
+        "question": "Como seria a entrada secreta?",
+        "options": [
+          { "name": "Passagem secreta em uma biblioteca", "alias": "A" },
+          { "name": "Túnel disfarçado de lava", "alias": "B" },
+          { "name": "Elevador camuflado", "alias": "A" },
+          { "name": "Portal interdimensional", "alias": "B" }
+        ]
+      },
+      {
+        "question": "Qual a medida de segurança mais importante?",
+        "options": [
+          { "name": "Sensores de movimento avançados", "alias": "A" },
+          { "name": "Exército de robôs de guarda", "alias": "B" },
+          { "name": "Câmeras de vigilância em todos os cantos", "alias": "A" },
+          { "name": "Campo de força invisível", "alias": "B" }
+        ]
+      }
+    ],
+    "results": {
+      "A": "Seu esconderijo seria perfeito para um super Vilão!",
+      "B": "Seu esconderijo seria o local ideal para um super Herói!"
+    }
+  },
+  {
+    "title": "Qual seria sua estratégia ao enfrentar uma invasão alienígena?",
+    "questions": [
+      {
+        "question": "Como você faria primeiro contato?",
+        "options": [
+          { "name": "Oferecer presentes simbólicos", "alias": "A" },
+          { "name": "Desafiar o líder alienígena para um duelo", "alias": "B" },
+          { "name": "Criar um tratado de paz intergaláctica", "alias": "A" },
+          { "name": "Usar comunicação telepática", "alias": "B" }
+        ]
+      },
+      {
+        "question": "Qual seria seu plano de batalha?",
+        "options": [
+          {
+            "name": "Estratégia coordenada com exércitos mundiais",
+            "alias": "A"
+          },
+          { "name": "Atacar diretamente a nave-mãe inimiga", "alias": "B" },
+          { "name": "Criar uma resistência global", "alias": "A" },
+          {
+            "name": "Desenvolver tecnologia alienígena para contra-atacar",
+            "alias": "B"
+          }
+        ]
+      },
+      {
+        "question": "Qual seria seu discurso motivacional para a humanidade?",
+        "options": [
+          { "name": "Unir-se contra a ameaça comum", "alias": "A" },
+          { "name": "Inspirar coragem através da música", "alias": "B" },
+          {
+            "name": "Apelar para a solidariedade interplanetária",
+            "alias": "A"
+          },
+          { "name": "Prometer proteção divina", "alias": "B" }
+        ]
+      }
+    ],
+    "results": {
+      "A": "Sua estratégia seria eficaz contra a invasão alienígena como um super Herói!",
+      "B": "Você seria uma força imparável contra os invasores alienígenas como um super Vilão!"
+    }
+  }
+]
