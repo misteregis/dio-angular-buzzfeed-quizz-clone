@@ -29,6 +29,9 @@ export class QuizzComponent implements OnInit {
       const quizzLength = quizz_questions.length;
 
       this.quizz = quizz_questions[this.generateRandomNumber(quizzLength)];
+
+      this.shuffleArray();
+
       this.finished = false;
       this.title = this.quizz.title;
 
@@ -74,5 +77,16 @@ export class QuizzComponent implements OnInit {
     const randomNumber = Math.floor(Math.random() * max);
 
     return randomNumber;
+  }
+
+  shuffleArray(): void {
+    for (let i = this.quizz.questions.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+
+      [this.quizz.questions[i], this.quizz.questions[j]] = [
+        this.quizz.questions[j],
+        this.quizz.questions[i],
+      ];
+    }
   }
 }
