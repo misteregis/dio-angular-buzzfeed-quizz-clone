@@ -1,3 +1,6 @@
 svg {
   height: 5rem;
+  -webkit-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
 }

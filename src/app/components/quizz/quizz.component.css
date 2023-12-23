@@ -44,10 +44,16 @@
   font-size: 1.25rem;
   font-family: "Segoe UI";
   margin-bottom: 1.25rem;
+  -webkit-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
 }
 
 .quizz_questions > h3 {
   text-align: center;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
 }
 
 .quizz_options {
@@ -68,11 +74,13 @@
 .btn-option {
   background-color: transparent;
   -webkit-transition: background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, color 0.15s ease-in-out;
-  -o-transition: background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    border-color 0.15s ease-in-out, color 0.15s ease-in-out,
+    font-size 0.3s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out, font-size 0.3s ease-in-out,
+    border-color 0.15s ease-in-out, color 0.15s ease-in-out,
+    height 0.3s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    color 0.15s ease-in-out;
+    color 0.15s ease-in-out, font-size 0.3s ease-in-out;
   border-radius: 8px;
   border: 0.0625rem solid white;
   width: calc(50% - 0.625rem);
@@ -98,6 +106,9 @@
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
   border-radius: 10px;
   padding: 30px;
   display: -webkit-box;
